@@ -1,0 +1,612 @@
+{
+	"info": {
+		"_postman_id": "07ae14d0-01bc-4714-88c7-384c54b8f1dd",
+		"name": "kasir kafe",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "menu",
+			"item": [
+				{
+					"name": "GET menu",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "localhost:4040/kasir_kafe/menu",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"kasir_kafe",
+								"menu"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST menu",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nama_menu",
+									"value": "Legen",
+									"type": "default"
+								},
+								{
+									"key": "jenis",
+									"value": "minuman",
+									"type": "default"
+								},
+								{
+									"key": "deskripsi",
+									"value": "Sari buah buah simalakama",
+									"type": "default"
+								},
+								{
+									"key": "gambar",
+									"type": "file",
+									"src": "/C:/Users/Ardha Nur Fajri/Pictures/loker.jpg"
+								},
+								{
+									"key": "harga",
+									"value": "12000",
+									"type": "default"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:4040/kasir_kafe/menu",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"kasir_kafe",
+								"menu"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT menu",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id_menu",
+									"value": "3",
+									"type": "default"
+								},
+								{
+									"key": "gambar",
+									"type": "file",
+									"src": "/C:/Users/Ardha Nur Fajri/Pictures/loker.jpg"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:4040/kasir_kafe/menu",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"kasir_kafe",
+								"menu"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE menu",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:4040/kasir_kafe/menu/2",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"kasir_kafe",
+								"menu",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "meja",
+			"item": [
+				{
+					"name": "GET meja",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:4040/kasir_kafe/meja",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"kasir_kafe",
+								"meja"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST meja",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nomor_meja\":\"001\",\r\n    \"status_meja\":\"tersedia\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:4040/kasir_kafe/meja",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"kasir_kafe",
+								"meja"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT meja",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id_meja\": 3,\r\n    \"nomor_meja\":\"004\",\r\n    \"status_meja\":\"tidak_tersedia\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:4040/kasir_kafe/meja",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"kasir_kafe",
+								"meja"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE meja",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:4040/kasir_kafe/meja/3",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"kasir_kafe",
+								"meja",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "GET user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJpZF91c2VyIjoxLCJuYW1hX3VzZXIiOiJhcmRoYSIsInJvbGUiOiJrYXNpciIsInVzZXJuYW1lIjoiYXJkaGEiLCJwYXNzd29yZCI6IjdjOTU5MTNmNjdlOTc2ZjBjY2RiMTUzMGJlYmRmYTE3IiwiY3JlYXRlZEF0IjoiMjAyMy0wMS0xN1QxMzo1ODoyNy4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMy0wMS0xN1QxMzo1ODoyNy4wMDBaIn0.nl2KQaX7yXHoxiMIu8e9mEjjnB-QABChpNzn5mpg-Ek",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:4040/kasir_kafe/user",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"kasir_kafe",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LOGIN user kasir",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"ardha\",\r\n    \"password\":\"ardha\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:4040/kasir_kafe/user/kasir",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"kasir_kafe",
+								"user",
+								"kasir"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LOGIN user admin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"ardha_admin\",\r\n    \"password\":\"ardha_admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:4040/kasir_kafe/user/admin",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"kasir_kafe",
+								"user",
+								"admin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LOGIN user manajer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"\",\r\n    \"password\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:4040/kasir_kafe/user/manajer",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"kasir_kafe",
+								"user",
+								"manajer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJpZF91c2VyIjoxLCJuYW1hX3VzZXIiOiJhcmRoYSIsInJvbGUiOiJrYXNpciIsInVzZXJuYW1lIjoiYXJkaGEiLCJwYXNzd29yZCI6IjdjOTU5MTNmNjdlOTc2ZjBjY2RiMTUzMGJlYmRmYTE3IiwiY3JlYXRlZEF0IjoiMjAyMy0wMS0xN1QxMzo1ODoyNy4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMy0wMS0xN1QxMzo1ODoyNy4wMDBaIn0.nl2KQaX7yXHoxiMIu8e9mEjjnB-QABChpNzn5mpg-Ek",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id_user\":1,\r\n    \"username\":\"ardha_kasir\",\r\n    \"password\":\"ardha_kasir\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:4040/kasir_kafe/user",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"kasir_kafe",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJpZF91c2VyIjoxLCJuYW1hX3VzZXIiOiJhcmRoYSIsInJvbGUiOiJrYXNpciIsInVzZXJuYW1lIjoiYXJkaGEiLCJwYXNzd29yZCI6IjdjOTU5MTNmNjdlOTc2ZjBjY2RiMTUzMGJlYmRmYTE3IiwiY3JlYXRlZEF0IjoiMjAyMy0wMS0xN1QxMzo1ODoyNy4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMy0wMS0xN1QxMzo1ODoyNy4wMDBaIn0.nl2KQaX7yXHoxiMIu8e9mEjjnB-QABChpNzn5mpg-Ek",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"ardha_manajer\",\r\n    \"password\":\"ardha_manajer\",\r\n    \"role\":\"manajer\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:4040/kasir_kafe/user",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"kasir_kafe",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJpZF91c2VyIjoxLCJuYW1hX3VzZXIiOiJhcmRoYSIsInJvbGUiOiJrYXNpciIsInVzZXJuYW1lIjoiYXJkaGEiLCJwYXNzd29yZCI6IjdjOTU5MTNmNjdlOTc2ZjBjY2RiMTUzMGJlYmRmYTE3IiwiY3JlYXRlZEF0IjoiMjAyMy0wMS0xN1QxMzo1ODoyNy4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMy0wMS0xN1QxMzo1ODoyNy4wMDBaIn0.nl2KQaX7yXHoxiMIu8e9mEjjnB-QABChpNzn5mpg-Ek",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:4040/kasir_kafe/user/5",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"kasir_kafe",
+								"user",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "pemesanan",
+			"item": [
+				{
+					"name": "get pemesanan",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:4040/kasir_kafe/pemesanan",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"kasir_kafe",
+								"pemesanan"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "post pemesanan",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id_user\": 1,\r\n    \"id_meja\":1,\r\n    \"detail_transaksi\":[\r\n        {\r\n            \"id_menu\": 1,\r\n            \"qty\": 2\r\n        },\r\n        {\r\n            \"id_menu\": 2,\r\n            \"qty\": 2\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:4040/kasir_kafe/pemesanan",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"kasir_kafe",
+								"pemesanan"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete pemesanan",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:4040/kasir_kafe/pemesanan/3",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"kasir_kafe",
+								"pemesanan",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get detail pemesanan",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:4040/kasir_kafe/pemesanan/detail",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"kasir_kafe",
+								"pemesanan",
+								"detail"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update status",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"status\":\"lunas\",\r\n    \"id_transaksi\": 4\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:4040/kasir_kafe/pemesanan",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"kasir_kafe",
+								"pemesanan"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
